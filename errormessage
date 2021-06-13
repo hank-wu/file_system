@@ -1,0 +1,10 @@
+/tmp/ccu47O1o.o: In function `FindNodeByPathnameVisitor_Link_Test::TestBody()':
+ut_fs.cpp:(.text+0x298a): undefined reference to `FindNodeByPathnameVisitor::getNode() const'
+/tmp/ccu47O1o.o: In function `FindNodeByPathnameVisitor_LinkInFolder_Test::TestBody()':
+ut_fs.cpp:(.text+0x2cf7): undefined reference to `FindNodeByPathnameVisitor::getNode() const'
+/tmp/ccu47O1o.o: In function `FindNodeByPathnameVisitor_nonExistingFileInFileSystem_Test::TestBody()':
+ut_fs.cpp:(.text+0x306a): undefined reference to `FindNodeByPathnameVisitor::getNode() const'
+/tmp/ccu47O1o.o: In function `FindNodeByPathnameVisitor::FindNodeByPathnameVisitor(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >*)':
+ut_fs.cpp:(.text._ZN25FindNodeByPathnameVisitorC2EPSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS6_EE[_ZN25FindNodeByPathnameVisitorC5EPSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS6_EE]+0x1f): undefined reference to `vtable for FindNodeByPathnameVisitor'
+collect2: error: ld returned 1 exit status
+make: *** [bin/hw7] Error 1
