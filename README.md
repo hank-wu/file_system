@@ -10,3 +10,25 @@
    * ファイルの名前を変更。変更を保存。
    * ファイルの内容を表す。
    * ファイルの内容を変更。変更を保存。
+
+# 機能
+1. 目標フォルダの構造を表して、フォルダの内部ファイルの名前の隣りにファイルのサイズをつける。
+
+![main page](/image/mainpage.png)
+
+
+コマンドで目標フォルダを選んでから、アプリケーションで目標フォルダの構造を表す
+
+下のコマンドをコマンドラインで入力する：
+
+ bin/filesystem ｛目標フォルダ｝
+
+例：
+ ![command](/image/command.PNG)
+
+Demo:
+ [機能1](https://drive.google.com/file/d/1HJukDp3vXKt0IG05xKubMKE-XEyXnKua/view?usp=sharing)
+
+2. ファイルの名前を変更。変更を保存。
+
+ダブルクリック

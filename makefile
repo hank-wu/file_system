@@ -7,9 +7,9 @@ OBJ=obj
 GUI=gui
 LIBS=-lgtest -lpthread
 
-all: clean dirs $(BIN)/hw8
+all: clean dirs $(BIN)/filesystem
 
-$(BIN)/hw8:	$(GUI)/tree_test.cpp $(GUI)/tree_test.h $(GUI)/tree_frame.h $(GUI)/node_data.h $(OBJ)/buildtree_visitor.o $(OBJ)/read_visitor.o $(OBJ)/setpath_visitor.o | $(BIN)
+$(BIN)/filesystem:	$(GUI)/tree_test.cpp $(GUI)/tree_test.h $(GUI)/tree_frame.h $(GUI)/node_data.h $(OBJ)/buildtree_visitor.o $(OBJ)/read_visitor.o $(OBJ)/setpath_visitor.o | $(BIN)
 	g++ $< $(OBJ)/buildtree_visitor.o $(OBJ)/read_visitor.o $(OBJ)/setpath_visitor.o `wx-config --libs` `wx-config --cxxflags` -o $@
 
 $(OBJ)/text_frame.o: $(GUI)/text_frame.cpp $(GUI)/text_frame.h | $(OBJ)
