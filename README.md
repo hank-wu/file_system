@@ -53,3 +53,23 @@ Demo:
 
   Demo:
  [機能2](https://drive.google.com/file/d/1zJ2_eUUdu8mF-y0UMB2YE2a90CcmYhzz/view?usp=sharing)
+
+3. ファイルの内容を表す。
+左側の複合構造でラベルをクリックして、対応の内容が右側で現れる。クリックしたラベルのがフォルダやバイナリデータなど表示できない場合はディフォルトの文章を表す。
+
+ディフォルト:
+
+バイナリファイル＆リンク: "The file is not displayed in the editor because it uses an unsupported text encoding.".
+
+フォルダ: do not show anything.
+
+ラベルをクリックして、クリックしたファイルの中がテキスト場合：
+
+ ![textContent page](/image/editViewShowTextfile.png)
+
+ラベルをクリックして、ク表示できない場合：.
+
+ ![binaryContent page](/image/editViewShowBinaryfileDefaultValue.png)
+
+ Demo:
+ [機能3](https://drive.google.com/file/d/1FhPhdp2hPRkcRN5gqjWMEMui4vtbp9JY/view?usp=sharing)
