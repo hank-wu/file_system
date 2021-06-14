@@ -92,11 +92,62 @@ Demo:
  Demo:
  [機能4](https://drive.google.com/file/d/11sYX52X-NHpEnJR7U2_uvKJG5rqMBJXp/view?usp=sharing)
 
-#
+# 設計図
 
-## プログラミング言語
+### プログラミング言語
 C++
-## ライブラリ
+### ライブラリ
 WxWidgets 3.0.5
-## 環境
+### 環境
 Linux or Ubuntu bash in win10.
+
+# インストールと起動の手続き
+
+Ubuntu bash in win10 の場合：
+
+https://www.wxwidgets.org/downloads/ でwxWidgetsをダウンタウンして、このプロジェクトの使うバージョンが3.0.5で、Windows ZIPをダウンタウン。
+解凍してから、bashを起動して、解凍のフォルダに入る。
+例：
+
+        cd /mnt/c/wxWidgets-3.0.4
+
+コマンドを入力
+
+        sudo apt-get update
+        sudo apt-get install libwxgtk3.0-dev
+        sudo apt-get install libgtk-3-dev build-essential checkinstall
+        mkdir gtk-build
+        cd gtk-build/
+        ../configure --enable-unicode --enable-debug
+        make
+        sudo make install
+
+コマンドを入力して、インストールが成功するかどうかを確認：
+
+        wx-config --version
+
+結果：
+
+        3.0.5
+
+VcXsrvをインストール：
+
+https://sourceforge.net/projects/vcxsrv/  でVcXsrvをダウンロードして、インストールする。全部ディフォルトの設定でする。
+
+XLaunchを起動。同じく全部ディフォルトの設定でする。
+
+プロジェクトのフォルダで
+        
+        make
+        export DISPLAY=:0
+        bin/filesystem ｛目標フォルダ｝
+
+"error while loading shared libraries: libwx_gtk3u_core-3.1.so.3: cannot open shared object file: No such file or directory"というメッセージが出る可能性がある。
+
+        sudo apt-get install libwxgtk-webview3.0-gtk3-0v5 libwxgtk-media3.0-gtk3-0v5
+
+そういうコメンドで解決。
+
+Linux の場合：
+https://www.kkaneko.jp/tools/ubuntu/wxwidgetslinux.html
+
