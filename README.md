@@ -105,7 +105,7 @@ Linux or Ubuntu bash in win10.
 
 Ubuntu bash in win10 の場合：
 
-https://www.wxwidgets.org/downloads/ でwxWidgetsをダウンタウンして、このプロジェクトの使うバージョンが3.0.5で、Windows ZIPをダウンタウン。
+https://www.wxwidgets.org/downloads/ でwxWidgetsをダウンロードして、このプロジェクトの使うバージョンが3.0.5で、Windows ZIPをダウンロード。
 解凍してから、bashを起動して、解凍のフォルダに入る。
 例：
 
