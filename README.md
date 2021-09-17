@@ -12,7 +12,9 @@
 時、WxWidgetsで構築するUIが更新する必要がある。ObserverがUIとフォルダやファイのオブジェクトを分かれて。変更したら、UIプログラムを通知する。
 
 # リファレンス
+
 GoF デザインパターン： https://qiita.com/i-tanaka730/items/c63c6c22abd1477e0ba0
+
 SOLID 原則：https://qiita.com/baby-degu/items/d058a62f145235a0f007
 
 # 設計図
